@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{    background-color: white;}
+
+#grilla{
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: .5fr .5fr 1fr 1fr 1fr 1fr .5fr;
+    grid-template-areas: "header" "nav" "playeras" "promocionales" "imprenta" "contacto" "footer";
+    height: 100vh;
+}
+
+
+header{
+  background-color: goldenrod;
+  display: grid;
+  width: 100vw;
+  height: 200px;
+  justify-items: center;
+  padding: 30px;
+}
+
+header.nombre{
+margin-top: 25px;
+
+}
+nav{
+    font-family: 'Alata', sans-serif;
+
+    background-color: goldenrod;
+    border: 1px goldenrod;
+    height: 5vh;
+    align-items: center;
+}
+ul{
+    background-color: goldenrod;
+
+}
+nav ul{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    justify-content: space-evenly;  
+}
+nav li a{
+    color: white;
+    padding-inline: 10px;
+    list-style: none;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: rgb(187, 3, 3);
+    color: rgb(237, 244, 250);
+    
+    
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    justify-items: center;
+}
+
+.playeras{
+    background-color: yellow;
+    font-family: 'Kalam', cursive;
+    text-align: center;
+    height:100px;
+    width: 75vw;
+    height: 150px;
+    margin: 30px;
+    border-radius: 5%;
+    align-items: center;
+    grid-area: playeras;
+}
+
+section a{
+    color: black;
+    margin-top: 50%;
+    text-decoration: none;
+    font-size: xx-large;
+}
+
+.promocionales {
+    background-color: fuchsia;
+    font-family: 'Kalam', cursive;
+    text-align: center;
+    height:100px;
+    width: 75vw;
+    height: 150px;
+    margin: 30px;
+    border-radius: 5%;
+    align-items: centerss;
+    grid-area: promocionales;
+}
+
+.imprenta{
+    background-color: rgb(0, 174, 255);
+    font-family: 'Kalam', cursive;
+    text-align: center;
+    height:100px;
+    width: 75vw;
+    height: 150px;
+    margin: 30px;
+    border-radius: 5%;
+    align-items: centerss;
+    grid-area: imprenta;
+    
+}
+.contacto a{
+    color: white;
+    
+
+}
+.contacto {
+    background-color: black;
+    font-family: 'Kalam', cursive;
+    text-align: center;
+    height:100px;
+    width: 75vw;
+    height: 150px;
+    margin: 30px;
+    border-radius: 5%;
+    align-items: centerss;
+    grid-area: contacto;
+    
+}
+
+.pie ul
+{
+    background-color: white;
+ 
+}
+footer{
+    background-color: white;
+    height: 200px;
+    margin-top: 30px;
+    text-align: center;
+    justify-items: center;
+
+}
+.pie ul li:hover{
+    background-color: white;
+   transform: scale(.7, .7);
+ }
+ @media screen and (min-width: 768px) {
+    body {
+            display: grid; 
+            grid-template-columns: 15% 35% 35% 15%;
+            grid-template-rows: .5fr 1fr 1fr 1fr 1fr 1fr .5fr;
+            grid-template-areas:
+            "header header header header"
+            "nav nav nav nav" 
+            "playeras playeras promocionales promocionales" 
+            "playeras playeras promocionales promocionales"
+            "imprenta imprenta contacto contacto"
+            "footer footer footer footer";
+            }
+        }
+       
